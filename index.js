@@ -28,7 +28,7 @@ app.use('/api', routes)
 
 
 
-app.listen(config.PORT || process.env.PORT, (err, data) => {
+app.listen( process.env.PORT ||config.PORT , (err, data) => {
     if (!err) {
         console.log("Server running on port " + config.PORT)
     }
